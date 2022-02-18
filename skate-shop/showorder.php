@@ -116,7 +116,7 @@
                         <td width="20%" align="center"><?php echo $row_pro['p_price']; ?></td>
                         <td width="5%" align="center"><?php echo $row_pro['d_qty']; ?></td>
                         <td width="20%" align="center" ><?php echo $row_pro['d_subtotal']; ?></td>
-
+                       
                     </tr>
                     </tdody>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
