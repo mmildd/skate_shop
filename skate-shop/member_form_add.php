@@ -1,0 +1,3 @@
+<!-- navbar.php -->
+
+ <!-- Register member -->
