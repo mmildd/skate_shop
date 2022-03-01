@@ -1,0 +1,35 @@
+
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+	border: none;
+	}
+	
+#menu {
+	width: 200px;
+	margin: 0px;
+	}
+	
+#menu li a {
+	height: 33px;
+  	height: 33px;
+	text-decoration: none;
+	}	
+	
+#menu li a:link, #menu li a:visited {
+	color: #FFF;
+	display: block;
+	background:  url(menu2.gif);
+	padding: 8px 0 0 35px;
+	}
+	
+#menu li a:hover {
+	color: #FFF;
+	background:  url(menu2.gif) 0 -32px;
+	padding: 8px 0 0 35px;
+	}

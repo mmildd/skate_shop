@@ -7,7 +7,7 @@
 <meta charset="utf-8">
   <title>Skate Shop</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="menu3.css" type="text/css" />
 
   <style>
     body {
@@ -27,7 +27,8 @@
       $row_pro = mysqli_fetch_array($result_pro);
       ?>
 
-<img src="admin/g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="400">
+<img src="admin/g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="300">
+
    
 
       <?php include('navbar3.php');?>
@@ -42,11 +43,13 @@
       ?>
  
     <div class="row">
-      <div class="col-md-2">
-        <div class="list-group">
-          <a href="memberprofile.php" class="list-group-item list-group-item-action" style="background-color: #cbbbe9;">Your Profile  <i class="fas fa-house-user"></i></a>
-          <a href="cart.php" class="list-group-item list-group-item-action" style="background-color: #cbbbe9;">Cart <i class="fas fa-shopping-cart"></i></a>
-          <a href="order.php" class="list-group-item list-group-item-action" style="background-color: #cbbbe9;">Order  <i class="fas fa-box-open"></i></a>
+      <div class="col-md-2"> 
+        <div id="menu">
+          <ul>
+            <li><a href="memberprofile.php" >Your Profile  <i class="fas fa-house-user"></i></a></li>
+            <li><a href="cart.php" >Cart <i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="order.php" >Order  <i class="fas fa-box-open"></i></a></li>
+          </ul>
         </div>
       </div>
       <div class="col-md-10">

@@ -4,18 +4,18 @@
       $row_pro = mysqli_fetch_array($result_pro);
       ?>
 
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e374ab;">
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #069;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php"><?php echo $row_pro["h_name"];?></a>
+    <a class="navbar-brand" href="index.php" style="color: #fff;"><?php echo $row_pro["h_name"];?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
         
         
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
             login
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -25,7 +25,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Please login</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: #fff;">Please login</a>
         </li>
       </ul>
 

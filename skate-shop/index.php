@@ -21,7 +21,7 @@
       $row_pro = mysqli_fetch_array($result_pro);
       ?>
 
-<img src="admin/g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="400">
+<img src="admin/g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="300">
 
     <?php include('navbar.php');?>
 

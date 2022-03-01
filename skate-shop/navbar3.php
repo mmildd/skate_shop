@@ -6,16 +6,16 @@
       $row_pro = mysqli_fetch_array($result_pro);
       ?>
 
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e374ab;">
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #069;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="home.php"><?php echo $row_pro["h_name"];?></a>
+    <a class="navbar-brand" href="home.php" style="color: #fff;"><?php echo $row_pro["h_name"];?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-      <b class="nav-link disabled" tabindex="-1" aria-disabled="true"><i class="fas fa-user"></i> <?php echo $m_name; ?></b>
+      <b class="nav-link disabled" tabindex="-1" aria-disabled="true" style="color: #fff;"><i class="fas fa-user"></i> <?php echo $m_name; ?></b>
         </li>
       </ul>
           

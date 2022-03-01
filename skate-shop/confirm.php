@@ -21,7 +21,13 @@
 </head>
 
 <body>
-<img  src="img/bg1.png" class="img-fluid" alt="">
+<?php
+      $query_product = "SELECT * FROM shop ";
+      $result_pro =mysqli_query($con, $query_product) or die ("Error in query: $query_product " . mysqli_error());
+      $row_pro = mysqli_fetch_array($result_pro);
+      ?>
+
+<img src="admin/g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="300">
     <?php include('navbar3.php');?>
 
    <br></br>

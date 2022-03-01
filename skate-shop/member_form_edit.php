@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Skate Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="menu3.css" type="text/css" />
 <style>
     body {
   background: url(img/woodwhite.jpeg);
@@ -74,56 +74,57 @@
    
 <div class="row">
   <div class="col-md-2">
-    <div class="list-group">
-          <a href="memberprofile.php" class="list-group-item list-group-item-action" style="background-color: #cbbbe9;">Your Profile  <i class="fas fa-house-user"></i></a>
-          <a href="cart.php" class="list-group-item list-group-item-action" style="background-color: #cbbbe9;">Cart <i class="fas fa-shopping-cart"></i></a>
-          <a href="#" class="list-group-item list-group-item-action" style="background-color: #cbbbe9;">Order  <i class="fas fa-box-open"></i></a>
-    </div>
+  <div id="menu">
+          <ul>
+            <li><a href="memberprofile.php" >Your Profile  <i class="fas fa-house-user"></i></a></li>
+            <li><a href="cart.php" >Cart <i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="order.php" >Order  <i class="fas fa-box-open"></i></a></li>
+          </ul>
+        </div>
   </div>
       
   <div class="col-md-2">
       <p></p>
     <form  name="register" action="member_form_edit_db.php" method="POST" id="member"class="form-horizontal">
     <input type="hidden" name="member_id" value="<?php echo $member_id; ?>"> 
-      <div class="card border-secondary" style="width: 30rem;">
-        <div class="card-body">
-        <p class="card-text"><h4>แก้ไขข้อมูล</h4></p>
-        </div>
+    <div class="card border-secondary" style="width: 60rem;" >
+      <div class="row">
+        
+  <div class="col-md-6">
 
-        <ul class="list-group list-group-flush">
-        <div class="card-body">
-          <div class="col-sm-12" align="left">
-            <div class="col-sm-6" align="left"> 
-            Username : <input  name="m_user" type="text" required class="form-control" id="m_user" value="<?=$m_user;?>" placeholder="Username" pattern="^[a-zA-Z0-9]+$" title="ภาษาอังกฤษหรือตัวเลขเท่านั้น" minlength="2"  />
+  <div class="card-body">
+            <label class="card-text"><h4><b>แก้ไขสมาชิก</b></h4></label>
+      </div><hr>
+      <div class="card-body">
+              <div class="col-sm-12" align="left"> Username :</div>
+                <div class="col-sm-8" align="left">
+                <input  name="m_user" type="text" required class="form-control" id="m_user" value="<?=$m_user;?>" placeholder="Username"  minlength="2"  />
+                </div><p>
+          
+              <div class="col-sm-12" align="left"> Password :</div>
+              <div class="col-sm-3" align="left">
+                <input  name="m_pass" type="password" required class="form-control" id="m_pass" value="<?=$m_pass;?>" placeholder="Password" pattern="^[a-zA-Z0-9]+$" minlength="2" />
+              </div><p>
+            
+              <div class="col-sm-12" align="left"> Name : </div>
+              <div class="col-sm-8" align="left">
+              <input  name="m_name" type="text" required class="form-control" id="m_name" value="<?=$m_name;?>" placeholder="ชื่อ-สกุล " />
+              </div>
+            
+              <div class="col-sm-12" align="left"> Email :</div>
+                <div class="col-sm-8" align="left">
+                <input  name="m_email" type="email" class="form-control" id="m_email"  value="<?=$m_email;?>" placeholder=" อีเมล์ example@hotmail.com"/>
+                </div><p>
+            
+          <div class="col-sm-12" align="left"> Tell :</div>
+            <div class="col-sm-8" align="left">
+            <input  name="m_tel" type="text" class="form-control" id="m_tel" value="<?=$m_tel;?>" placeholder="เบอร์โทร ตัวเลขเท่านั้น" />
             </div>
-          </div><p>
-        
-          <div class="col-sm-12" align="left">
-            <div class="col-sm-6" align="left"> 
-            Password : <input  name="m_pass" type="password" required class="form-control" id="m_pass"  value="<?=$m_pass;?>" placeholder="Password" pattern="^[a-zA-Z0-9]+$" minlength="2" />
-            </div>
-          </div><p>
-        
-          <div class="col-sm-12" align="left">
-            <div class="col-sm-6" align="left"> 
-            Name : <input  name="m_name" type="text" required class="form-control" id="m_name" value="<?=$m_name;?>" placeholder="ชื่อ-สกุล " />
-            </div>
-          </div><p>
-        
-          <div class="col-sm-12" align="left">
-            <div class="col-sm-6" align="left"> 
-            Email : <input  name="m_email" type="email" class="form-control" id="m_email"  value="<?=$m_email;?>" placeholder=" อีเมล์ example@hotmail.com"/>
-            </div>
-          </div><p>
-       
-          <div class="col-sm-12" align="left">
-            <div class="col-sm-6" align="left"> 
-            Tell :  <input  name="m_tel" type="text" class="form-control" id="m_tel" value="<?=$m_tel;?>" placeholder="เบอร์โทร ตัวเลขเท่านั้น" />
-            </div>
-          </div>
-        </div><p>
-
-        <div class="card-body">
+              </div>
+  </div>
+  <div class="col-md-6">
+    <br><p><p>
+              <div class="card-body">
           <div class="col-sm-12" align="left">
             <div class="col-sm-12" align="left"> 
               Address 
@@ -164,16 +165,16 @@
               <input type="text"  name="zip_code" class='form-control ' minlength="5" maxlength="5" id="zip_code" value="<?=$a_zipcode;?>"  readonly/>
             </div>
           </div>
-        </div>
-              </ul>
-
-        <div class="card-body">
-          <div class="col-sm-12" align="right">
-            <div class="col-sm-6" align="right"> 
-            <button type="submit" class="btn btn-success" id="btn"><span class="glyphicon glyphicon-ok"></span> Edit member  </button>
-            </div>
+     
           </div>
+      <div class="card-body">
+          <div class="col-sm-11" align="right">
+            <button type="submit" class="btn btn-success" id="btn"><span class="glyphicon glyphicon-ok"></span> Edit member  </button>
+          </div> 
         </div>
+    
+    </div>
+  </div>
       </div>
     </form>
   </div>

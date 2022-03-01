@@ -67,7 +67,7 @@ $result1 = mysqli_query($con, $query1);
       
                   <div class="mb-3">
                     <label for="message-text" class="col-form-label">รายละเอียดสินค้า:</label>
-                    <textarea  name="p_detail" rows="5" cols="50"></textarea>
+                    <textarea  name="p_detail" rows="5" cols="40"></textarea>
                   </div>
 
                   <div class="mb-3">

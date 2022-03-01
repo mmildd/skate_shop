@@ -9,9 +9,9 @@
       ?>
 
 
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e374ab;">
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #069;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="home.php"><?php echo $row_pro["h_name"];?></a> 
+    <a class="navbar-brand" href="home.php" style="color: #fff;"><?php echo $row_pro["h_name"];?></a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,7 +19,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
               About
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -30,10 +30,10 @@
             </ul>
         </li>
         <li class="nav-item">
-            <b class="nav-link disabled" tabindex="-1" aria-disabled="true"><i class="fas fa-user"></i> <?php echo $m_name; ?></b>
+            <b class="nav-link disabled" tabindex="-1" aria-disabled="true" style="color: #fff;"><i class="fas fa-user"></i> <?php echo $m_name; ?></b>
         </li>
         <li class="nav-item">
-        <a href="cart.php" class="btn position-relative"><i class="fas fa-shopping-cart"></i>
+        <a href="cart.php" class="btn position-relative"><i class="fas fa-shopping-cart" style="color: #fff;"></i>
         </a>
         </li>
       </ul>

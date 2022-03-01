@@ -61,9 +61,9 @@
                 <input  name="m_user" type="text" required class="form-control" id="m_user" value="<?=$m_user;?>" placeholder="Username"  minlength="2"  />
                 </div><p>
           
-              <div class="col-sm-12" align="left"> Password :</div>
+              <div class="col-sm-12" align="left"> Password : ***</div>
               <div class="col-sm-6" align="left">
-                <input  name="m_pass" type="password" required class="form-control" id="m_pass" value="<?=$m_pass;?>" placeholder="Password" pattern="^[a-zA-Z0-9]+$" minlength="2" />
+                <input type="hidden" name="m_pass" type="password" required class="form-control" id="m_pass" value="<?=$m_pass;?>" placeholder="Password" pattern="^[a-zA-Z0-9]+$" minlength="2" />
               </div><p>
             
               <div class="col-sm-12" align="left"> Name : </div>

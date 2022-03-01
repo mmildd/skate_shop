@@ -23,7 +23,7 @@
 
 <body>
 <div class="row">
-<img src="g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="400">
+<img src="g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="300">
     <p></p><p></p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <div class="col-10">
