@@ -24,12 +24,12 @@ include('h2.php');
 $sql_provinces = "SELECT * FROM provinces";
 $query_provinces = mysqli_query($con,$sql_provinces);
 ?>
-
+ <!-- 
       <a  class="btn-info btn-sm" href="member_list.php?act=add" data-bs-toggle="modal" data-bs-target="#addmember" data-bs-whatever="@mdo">
       Add Member
         </a>
- 
- <!-- add admin -->
+ -->
+ <!-- add member 
 
  <div class="modal fade" id="addmember" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
@@ -94,7 +94,7 @@ $query_provinces = mysqli_query($con,$sql_provinces);
             </div>
           </div>
         </div>
-
+-->
       <?php
           $act = $_GET['act'];
           if($act == 'add'){
@@ -147,7 +147,7 @@ $query_provinces = mysqli_query($con,$sql_provinces);
             <th>m_tel</th>
             <th>m_email</th>
             <th>m_address</th>
-            <th width="5%">edit</th>
+          <!--  <th width="5%">edit</th> -->
             <th width="5%">delete</th>
           </tr>
         </thead>
@@ -165,11 +165,13 @@ $query_provinces = mysqli_query($con,$sql_provinces);
                 <?php echo $row_am['dis_name_th']; ?>
                 <?php echo $row_am['a_zipcode']; ?>
               </td>
+               <!--
               <td align="center" ><a href="member_list.php?act=edit&ID=<?php echo $row_am['member_id']; ?>" class="btn btn-warning btn-sm"> Edit 
               <input type="hidden" name="provinces" value="<?php echo $row_am['pro_name_th']; ?>">
               <input type="hidden" name="amphures" value="<?php echo $row_am['am_name_th'];?>">
               <input type="hidden" name="districts" value="<?php echo $row_am['dis_name_th'];?>">
               </a> </td>
+              -->
               <td align="center" ><a href="member_del_db.php?ID=<?php echo $row_am['member_id']; ?>" class='btn btn-danger btn-sm'  onclick="return confirm('Do you want to delete this member? !!!'')">Delete</a> </td>
             </tr>
             

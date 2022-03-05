@@ -67,7 +67,7 @@
       $row_pro = mysqli_fetch_array($result_pro);
       ?>
 
-<img src="admin/g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="400">
+<img src="admin/g_img/<?php echo $row_pro['g_img']; ?>" width="100%" height="300">
       <?php include('navbar3.php');
       error_reporting( error_reporting() & ~E_NOTICE );
       ?>
@@ -96,9 +96,14 @@
             <label class="card-text"><h4><b>แก้ไขสมาชิก</b></h4></label>
       </div><hr>
       <div class="card-body">
-              <div class="col-sm-12" align="left"> Username :</div>
+              <div class="col-sm-12" align="left"> Username : <?php echo $row["m_user"];?></div>
                 <div class="col-sm-8" align="left">
-                <input  name="m_user" type="text" required class="form-control" id="m_user" value="<?=$m_user;?>" placeholder="Username"  minlength="2"  />
+                <input type="hidden"  name="m_user" type="text" required class="form-control" id="m_user" value="<?=$m_user;?>" placeholder="Username"  minlength="2"  />
+                </div><p>
+              
+                <div class="col-sm-12" align="left"> Email : <?php echo $row["m_email"];?></div>
+                <div class="col-sm-8" align="left">
+                <input type="hidden" name="m_email" type="email" class="form-control" id="m_email"  value="<?=$m_email;?>" placeholder=" อีเมล์ example@hotmail.com"/>
                 </div><p>
           
               <div class="col-sm-12" align="left"> Password :</div>
@@ -109,12 +114,8 @@
               <div class="col-sm-12" align="left"> Name : </div>
               <div class="col-sm-8" align="left">
               <input  name="m_name" type="text" required class="form-control" id="m_name" value="<?=$m_name;?>" placeholder="ชื่อ-สกุล " />
-              </div>
+              </div><p>
             
-              <div class="col-sm-12" align="left"> Email :</div>
-                <div class="col-sm-8" align="left">
-                <input  name="m_email" type="email" class="form-control" id="m_email"  value="<?=$m_email;?>" placeholder=" อีเมล์ example@hotmail.com"/>
-                </div><p>
             
           <div class="col-sm-12" align="left"> Tell :</div>
             <div class="col-sm-8" align="left">

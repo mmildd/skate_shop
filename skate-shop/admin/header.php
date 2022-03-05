@@ -19,6 +19,7 @@
       $query_product = "SELECT * FROM shop ";
       $result_pro =mysqli_query($con, $query_product) or die ("Error in query: $query_product " . mysqli_error());
       $row_pro = mysqli_fetch_array($result_pro);
+
       ?>
 
 <body>
@@ -34,7 +35,7 @@
       </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <div class="col-1">
         <div class="icons">
-            <i class="fas fa-user"></i><b style="color:#212529"> <?php echo $a_name; ?></b>
+            <i class="fas fa-user"></i><b style="color:#212529"> <?php echo $a_user; ?></b>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="../logout.php" class="fas fa-sign-out-alt" onclick="return confirm('คุณต้องการออกจากระบบหรือไม่?')"></a>
         </div>
